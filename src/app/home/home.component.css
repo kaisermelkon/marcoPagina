@@ -1,0 +1,126 @@
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-size-1-5 {
+    font-size: 1.5em;
+}
+
+.font-size-5 {
+    font-size: 5em;
+}
+
+.min-height-4em {
+    min-height: 4em;
+}
+
+.background-full-page {
+    background-image: url('/assets/images/portada.jpg');
+    /* Set rules to fill background */
+    background-repeat:no-repeat;
+    background-size:contain;
+  }
+  
+
+/*Liena de separacion entre las partes*/
+.hr-divider { 
+    display: block;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 0.1em;
+    width:83em;
+}
+
+.image-portafolio {
+    height: 20em;
+    width: 25em;
+}
+
+.image-blog {
+    height: 30em;
+    width: 35em;
+}
+
+/*Establece un css grid que divide el espacio disponible en 3 columnas de tamanos iguales y 12 rows de tamanos iguales*/
+/*Establece un css grid que divide el espacio disponible en 12 columnas de tamanos iguales y 2 rows de tamanos iguales*/
+.base-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /*1fr 1fr 1fr*/
+    grid-template-rows: repeat(1, 1fr);
+    
+}
+
+/*Indica que el contenido de la pgina ocupara 10 columnas dejando la primera y la ultima para espacios en blanco a los lados*/
+.grid-page-content {
+    grid-column: 2 / 12
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*1fr 1fr 1fr*/
+    grid-template-rows: repeat(74, 2em);
+     
+}
+
+/*Centra todo horizontalmente y verticalmente*/
+.grid-div-display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/*Si colocas en el grid-column-end: -1 te da el ultimo valor posible dada la cantidad de tus columnas*/
+/*Si colocas en el grid-column-end: span 2, esto indica que ocuparia el espacio de 2 columnas desde la posicion dada en el grid-column-start*/
+.grid-div-first-words {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 8 / 12;
+}
+
+.grid-div-divider-first-words {
+    grid-row: 21/ 23;
+    grid-column: 1 / -1;
+}
+
+.grid-div-header-portafolio {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 25 / 28;
+}
+
+.grid-div-images-portafolio {
+    grid-row: 32 / 36;
+}
+
+.grid-div-button-portafolio {
+    grid-row: 42 / 44;
+    grid-column: 1 / -1;
+}
+
+.grid-div-divider-portafolio {
+    grid-row: 46 / 48;
+    grid-column: 1 / -1;
+}
+
+.grid-div-header-blog {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 50 / 54;
+}
+
+.grid-div-image-blog {
+    grid-column: 1 / -1;
+    grid-row: 59 / 65;
+}
+
+.grid-div-button-blog {
+    grid-row: 71 / 73;
+    grid-column: 1 / -1;
+}
+
+

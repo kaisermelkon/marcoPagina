@@ -1,21 +1,111 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+  <mat-toolbar class="background-color-black" style="height: 5em;">
+    <!--Titulo y/o logo de la aplicacion a la izquierda del navbar-->
+    <span><img style="width: 5em; height: 3em;" src="assets/images/isotipo blanco.png">></span>
 
-<router-outlet></router-outlet>
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+    <!--Estos son los elementos del navbar que van a la derecha-->
+    <span
+      ><a
+        class="text-color-white navbar-link-font-size navbar-link-underline-remove navbar-link-margin-right font-type-cross-town font-color-white"
+        routerLink="/home"
+        >Home</a
+      ></span
+    >
+    <span
+      ><a
+        class="text-color-white navbar-link-font-size navbar-link-underline-remove navbar-link-margin-right font-type-cross-town font-color-white"
+        routerLink="/servicios"
+        >Servicios</a
+      ></span
+    >
+    <span
+      ><a
+        class="text-color-white navbar-link-font-size navbar-link-underline-remove navbar-link-margin-right font-type-cross-town font-color-white"
+        routerLink="/articulos"
+        >Articulos</a
+      ></span
+    >
+    <span
+      ><a
+        class="text-color-white navbar-link-font-size navbar-link-underline-remove navbar-link-margin-right font-type-cross-town font-color-white"
+        routerLink="/portafolio"
+        >Portafolio</a
+      ></span
+    >
+    <span
+      ><a
+        class="text-color-white navbar-link-font-size navbar-link-underline-remove navbar-link-margin-right font-type-cross-town font-color-white"
+        routerLink="/home"
+        >Contacto</a
+      ></span
+    >
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+  <footer class="page-footer background-color-black">
+    <div class="grid text-color-white" style="letter-spacing: 0.1em;">
+      <div class="grid-div-display-flex-center grid-footer-title-row grid-footer-column-2">
+        <h1>Marco's</h1>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-subTitle-row grid-footer-column-2">
+        <h3>Community Manager</h3>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-first-data-row grid-footer-column-2 font-type-breaksteel">
+        <p>+58 4143678978</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-second-data-row grid-footer-column-2">
+        <p>marco@gmail.com</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-third-data-row grid-footer-column-2">
+        <p>Instagram</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-fourth-data-row grid-footer-column-2">
+        <p>Twitter</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-title-row grid-footer-column-3">
+        <h1>Juan</h1>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-subTitle-row grid-footer-column-3">
+        <h3>Designer</h3>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-first-data-row grid-footer-column-3 font-type-breaksteel">
+        <p>+58 4143678978</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-second-data-row grid-footer-column-3">
+        <p>marco@gmail.com</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-third-data-row grid-footer-column-3">
+        <p>Instagram</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-fourth-data-row grid-footer-column-3">
+        <p>Twitter</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-fifth-data-row grid-footer-column-3">
+        <p>Web page</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-title-row grid-footer-column-4">
+        <h1>The Great South</h1>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-subTitle-row grid-footer-column-4">
+        <h3>Developer</h3>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-first-data-row grid-footer-column-4 font-type-breaksteel">
+        <p>+58 4143678978</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-second-data-row grid-footer-column-4">
+        <p>marco@gmail.com</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-third-data-row grid-footer-column-4">
+        <p>Instagram</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-fourth-data-row grid-footer-column-4">
+        <p>Twitter</p>
+      </div>
+      <div class="grid-div-display-flex-center grid-footer-fifth-data-row grid-footer-column-4">
+        <p>Web page</p>
+      </div>
+    </div>
+  </footer>
+  
+

@@ -1,0 +1,21 @@
+.black{
+    background-color: rgb(15,15,15)
+}
+
+.white {
+    background-color: rgb(255,255,255)
+}
+
+/*Establece un css grid que divide el espacio disponible en 12 columnas de tamanos iguales y 2 rows de tamanos iguales*/
+.base-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /*1fr 1fr 1fr*/
+    grid-template-rows: repeat(1, 1fr);
+    
+}
+
+/*Indica que el contenido de la pgina ocupara 10 columnas dejando la primera y la ultima para espacios en blanco a los lados*/
+.grid-page-content {
+    grid-column: 2 / 12
+}
+

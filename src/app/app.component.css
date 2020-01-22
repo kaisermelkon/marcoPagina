@@ -1,0 +1,98 @@
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.background-color-black {
+    background-color: rgb(15,15,15)
+}
+
+.navbar-link-underline-remove {
+    text-decoration: none;
+}
+
+.navbar-link-margin-right {
+    margin-left: 0.5em;
+}
+
+.text-color-white {
+    color: white;
+}
+
+.navbar-link-font-size {
+    font-size: 1.3em;
+}
+
+.font-type-cross-town {
+    font-family: cross-town;
+}
+
+.font-type-breaksteel {
+    font-family: breaksteel;
+}
+
+.font-color-white {
+    color: rgb(255,255,255)
+}
+
+/*Establece un css grid que divide el espacio disponible en 5 columnas de tamanos iguales y 74 rows de tamanos iguales*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /*1fr 1fr 1fr*/
+    grid-template-rows: repeat(20, 0.75em);
+}
+
+/*Centra todo horizontalmente y verticalmente*/
+.grid-div-display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.grid-footer-column-2{
+    grid-column: 2 / 3;
+}
+
+.grid-footer-column-3{
+    grid-column: 3 / 4;
+}
+
+.grid-footer-column-4{
+    grid-column: 4 / 5;
+}
+
+.grid-footer-title-row {
+    grid-row: 3 / 6;
+}
+
+.grid-footer-subTitle-row {
+    grid-row: 6 / 7;
+}
+
+.grid-footer-first-data-row {
+    grid-row: 10 / 11;
+}
+
+.grid-footer-second-data-row {
+    grid-row: 12 / 13;
+}
+
+.grid-footer-third-data-row {
+    grid-row: 14 / 15;
+}
+
+.grid-footer-fourth-data-row {
+    grid-row: 16 / 17;
+}
+
+.grid-footer-fifth-data-row {
+    grid-row: 18 / 19;
+}
+
+
+
+
+
+
+
