@@ -16,7 +16,7 @@
 }
 
 .background-full-page {
-    background-image: url('/assets/images/portada.jpg');
+    background: url('/assets/images/portada.jpg'), url('/assets/images/fondo 1.png') 0 53.3em, url('/assets/images/footer.jpg') 0 99em;
     /* Set rules to fill background */
     background-repeat:no-repeat;
     background-size:contain;
