@@ -12,13 +12,13 @@
 }
 
 .min-height-4em {
-    min-height: 4em;
+    height: 4em;
 }
 
 .background-full-page {
-    background: url('/assets/images/portada.jpg'), url('/assets/images/fondo 1.png') 0 53.3em, url('/assets/images/footer.jpg') 0 99em;
+    background: url('/assets/images/portada.jpg'), url('/assets/images/fondo 1.png') 0 53.3em;
     /* Set rules to fill background */
-    background-repeat:no-repeat;
+    background-repeat:no-repeat, repeat;
     background-size:contain;
   }
   
@@ -63,7 +63,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /*1fr 1fr 1fr*/
-    grid-template-rows: repeat(74, 2em);
+    grid-template-rows: repeat(70, 2em);
      
 }
 
