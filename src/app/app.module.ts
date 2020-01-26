@@ -1,5 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +20,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PortafolioComponent } from './portafolio/portafolio.component';
 import { ServicesComponent } from './services/services.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -23,7 +29,8 @@ import { ServicesComponent } from './services/services.component';
     HomeComponent,
     ArticulosComponent,
     PortafolioComponent,
-    ServicesComponent
+    ServicesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +48,9 @@ import { ServicesComponent } from './services/services.component';
         strictActionImmutability: true
       }
     }),
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
