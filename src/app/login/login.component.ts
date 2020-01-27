@@ -8,18 +8,14 @@ import { AuthenticationService } from './../shared/authentication.service';
 })
 export class LoginComponent implements OnInit {
 
-  email: string;
-  password: string;
-
   ngOnInit() {
   }
 
   constructor(private  authService: AuthenticationService) {}
 
-  login(){
-    console.log(this.email)
-    console.log(this.password)
-    this.authService.login(this.email, this.password);
+  login(form){
+    console.log(form)
+    this.authService.login(form.form.value.user, form.form.value.password);
   }
 
 

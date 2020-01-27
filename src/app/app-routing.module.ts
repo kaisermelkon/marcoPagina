@@ -5,11 +5,18 @@ import { ArticulosComponent } from './articulos/articulos.component';
 import { PortafolioComponent } from './portafolio/portafolio.component';
 import { ServicesComponent } from './services/services.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './auth/auth.guard';
+import { AdminArticulosComponent } from './admin-articulos/admin-articulos.component';
 
 const routes: Routes = [
 { 
   path: 'home', 
   component: HomeComponent 
+},
+{ 
+  path: 'articulos', 
+  component: AdminArticulosComponent,
+  canActivate: [AuthGuard] 
 },
 { 
   path: 'articulos', 

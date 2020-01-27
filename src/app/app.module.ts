@@ -21,6 +21,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PortafolioComponent } from './portafolio/portafolio.component';
 import { ServicesComponent } from './services/services.component';
 import { LoginComponent } from './login/login.component';
+import { AdminArticulosComponent } from './admin-articulos/admin-articulos.component';
+
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { LoginComponent } from './login/login.component';
     ArticulosComponent,
     PortafolioComponent,
     ServicesComponent,
-    LoginComponent
+    LoginComponent,
+    AdminArticulosComponent
   ],
   imports: [
     BrowserModule,
