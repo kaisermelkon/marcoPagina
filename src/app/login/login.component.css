@@ -1,5 +1,52 @@
+.background-full-page {
+    background: url('/assets/images/fondo 1.png');
+    /* Set rules to fill background */
+    background-repeat:no-repeat;
+    background-size:100%;
+  }
+
+  .text-color-white {
+    color: white;
+  }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /*1fr 1fr 1fr*/
-    grid-template-rows: repeat(70, 2em);
+    grid-template-rows: repeat(1, 1fr); /*27.75*/
+}
+
+.base-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /*1fr 1fr 1fr*/
+    grid-template-rows: repeat(22, 2em);
+}
+
+.grid-div-display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.grid-column {
+    grid-column: 2/3;
+}
+
+.grid-row-9 {
+    grid-row: 6/8;
+}
+
+.grid-row-11 {
+    grid-row: 8/10;
+}
+
+.grid-row-13 {
+    grid-row: 10/12;
+}
+
+.grid-row-15 {
+    grid-row: 12/14;
+}
+
+.grid-row-17 {
+    grid-row: 14/16;
 }
