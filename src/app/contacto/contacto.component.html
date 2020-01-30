@@ -1,0 +1,41 @@
+<div class="background-full-page text-color-white">
+  <div class="grid">
+    <div class="grid-column grid-div-display-flex-center">
+      <div class="base-grid">
+        <div class="grid-row-5">
+          <p class="font-size-2">
+            Solo llene la planilla de abajo y me pondre en contacto cuanto
+            antes!
+          </p>
+        </div>
+        <form #form="ngForm" (ngSubmit)="sendEmail(form)" novalidate>
+          <div class="base-grid-2">
+            <div class="grid-row-8 grid-div-display-flex-center">
+              <Input
+                class="element-width-100"
+                name="title"
+                ngModel
+                required
+                #title="ngModel"
+                placeholder="Titulo"
+              />
+            </div>
+            <div class="grid-row-10 grid-div-display-flex-center">
+              <textarea
+                class="element-width-100 element-height-100"
+                name="message"
+                ngModel
+                required
+                #message="ngModel"
+                placeholder="Ingrese aqui su mensaje"
+              ></textarea>
+            </div>
+            <div class="grid-row-17 grid-div-display-flex-center">
+                <button class="btn btn-success">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

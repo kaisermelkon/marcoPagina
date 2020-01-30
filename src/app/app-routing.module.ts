@@ -7,6 +7,7 @@ import { ServicesComponent } from './services/services.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth/auth.guard';
 import { AdminArticulosComponent } from './admin-articulos/admin-articulos.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 const routes: Routes = [
 { 
@@ -29,6 +30,10 @@ const routes: Routes = [
 {
   path: 'servicios',
   component: ServicesComponent
+},
+{
+  path: 'contacto',
+  component: ContactoComponent
 },
 {
   path: 'login',

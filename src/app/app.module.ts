@@ -22,6 +22,7 @@ import { PortafolioComponent } from './portafolio/portafolio.component';
 import { ServicesComponent } from './services/services.component';
 import { LoginComponent } from './login/login.component';
 import { AdminArticulosComponent } from './admin-articulos/admin-articulos.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 
@@ -33,7 +34,8 @@ import { AdminArticulosComponent } from './admin-articulos/admin-articulos.compo
     PortafolioComponent,
     ServicesComponent,
     LoginComponent,
-    AdminArticulosComponent
+    AdminArticulosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
