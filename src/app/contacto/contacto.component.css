@@ -13,6 +13,10 @@
     font-weight: 400;
 }
 
+.font-type-breaksteel {
+    font-family: breaksteel;
+}
+
 .grid-div-display-flex-center {
     display: flex;
     justify-content: center;
@@ -38,6 +42,14 @@
 
 .grid-row-10 {
     grid-row: 18/19;
+}
+
+.grid-row-12 {
+    grid-row: 21/22;
+}
+
+.grid-row-14 {
+    grid-row: 24/25;
 }
 
 
