@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicesComponent implements OnInit {
 
+  //Archivo local de pdf
   pdfSrc = "assets/pdf/servicios.pdf";
 
   constructor() { }

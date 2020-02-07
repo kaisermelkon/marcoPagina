@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private  authService: AuthenticationService) {}
 
+  //Llama el servicio de login 
   login(form){
     console.log(form)
     this.authService.login(form.form.value.user, form.form.value.password);

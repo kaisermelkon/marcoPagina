@@ -2,9 +2,10 @@
 const express = require('express');
 const path = require('path');
 
+//Variable para iniciar express
 const app = express();
 
-// Serve only the static files form the dist directory
+// Inicializa el app para usar heroku
 app.use(express.static(__dirname + '/dist/marcoPagina'));
 
 app.get('/*', function(req,res) {

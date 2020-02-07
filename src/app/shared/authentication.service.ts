@@ -14,6 +14,7 @@ export class AuthenticationService {
 
   userData: Observable<firebase.User>;
 
+  //Cosntructor del usuario de firebase
   constructor(public afAuth: AngularFireAuth, public router: Router) {
     this.afAuth.authState.subscribe(user => {
       if (user) {
@@ -34,6 +35,7 @@ export class AuthenticationService {
     )
   }
 
+  //retorna booleano si esta logeado
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user'));
     console.log(user)

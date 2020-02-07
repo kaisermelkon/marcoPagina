@@ -12,8 +12,4 @@ export class ContactoComponent implements OnInit {
   ngOnInit() {
   }
 
-  public sendEmail(form){
-
-  }
-
 }

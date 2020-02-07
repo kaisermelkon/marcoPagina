@@ -1,17 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-
+/*Agrega la font local de cross-town para poder usarse en el proyecto*/
 @font-face {
     font-family: cross-town;
     src: url(assets/fonts/cross-town/cross-town.ttf) format("truetype");
 }
 
+/*Agrega la font local de breaksteel para poder usarse en el proyecto*/
 @font-face {
     font-family: Breaksteel;
-    src: url(/assets/fonts/breaksteel/breaksteel.ttf) format("truetype");
+    src: url(/assets/breaksteel/breaksteel.ttf) format("truetype");
 }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: cross-town, Roboto, "Helvetica Neue", sans-serif; }
+
+
   

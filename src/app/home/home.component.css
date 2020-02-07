@@ -1,24 +1,31 @@
-
+/*Nivel de negrita de las letras*/
 .font-weight-400 {
     font-weight: 400;
 }
 
+/*Font de tamano 1.5 em*/
 .font-size-1-5 {
     font-size: 1.5em;
 }
 
+/*Font de tamano 5 em*/
 .font-size-5 {
     font-size: 5em;
 }
 
+/*altura de 4 em*/
 .min-height-4em {
     height: 4em;
 }
 
+/*Da el fondo a la pagina*/
 .background-full-page {
+    /*Url de la imagen local del proyecto, una despues de la otra los numeros al final implican el primero que tanto a la derecha se meuve la imagen
+    y el otro que tanto hacia abajo se mueve la imagen*/
     background: url('/assets/images/portada.jpg'), url('/assets/images/fondo central.png') 0 53.3em;
-    /* Set rules to fill background */
+    /*El primero indica que la primera imagen no se repite, el segundo que la segunda si*/
     background-repeat:no-repeat, repeat;
+    /*Wue contiene todo el contenido del div*/
     background-size:contain;
   }
   
@@ -36,33 +43,40 @@
     width:83em;
 }
 
+/*Las imagenes del home de los articulos*/
 .image-portafolio {
     height: 20em;
     width: 25em;
 }
 
+/*Las imagenes del home de los articulos*/
 .image-blog {
     height: 30em;
     width: 35em;
 }
 
-/*Establece un css grid que divide el espacio disponible en 3 columnas de tamanos iguales y 12 rows de tamanos iguales*/
-/*Establece un css grid que divide el espacio disponible en 12 columnas de tamanos iguales y 2 rows de tamanos iguales*/
+/*Sistema grid base*/
 .base-grid {
+    /*Indica que se usara el grid*/
     display: grid;
-    grid-template-columns: repeat(12, 1fr); /*1fr 1fr 1fr*/
+    /*Numero de columnas que tendra el grid y su tamano, 1 fr que indica todo el espacio disponible se divide en 12 partes por igual*/
+    grid-template-columns: repeat(12, 1fr); 
+    /*Numero de filas que tendra el grid y su tamano, 1 fr que idnica el espacio disponible se dividira en 1 fila*/
     grid-template-rows: repeat(1, 1fr);
     
 }
 
-/*Indica que el contenido de la pgina ocupara 10 columnas dejando la primera y la ultima para espacios en blanco a los lados*/
+
 .grid-page-content {
     grid-column: 2 / 12
 }
 
 .grid {
+    /*Indica que se usara el grid*/
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /*1fr 1fr 1fr*/
+    /*Numero de columnas que tendra el grid y su tamano, 1 fr que indica todo el espacio disponible se divide en 3 partes por igual*/
+    grid-template-columns: repeat(3, 1fr); 
+    /*Numero de filas que tendra el grid y su tamano, 2 em que indica el espacio disponible sera de 2em por el numero 70*/
     grid-template-rows: repeat(70, 2em);
      
 }

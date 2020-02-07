@@ -1,32 +1,43 @@
+/*Da el fondo a la pagina*/
 .background-full-page {
+    /*Url de la imagen local del proyecto*/
     background: url('/assets/images/contacto.png');
-    /* Set rules to fill background */
-    background-repeat:no-repeat, repeat;
+    /*Indica si el fondo se repetira o es solo una vez*/
+    background-repeat:no-repeat;
+    /*Indica el tamano del background, cover indica que cubre todo el contenido*/
     background-size:cover;
 }
 
+/*Texto xolor blanco y espaciado entre las letras*/
 .text-color-white {
     color: white;
     letter-spacing: 0.1em;
 }
 
+/*Nivel de negrita de las letras*/
 .font-weight-400 {
     font-weight: 500;
 }
 
+/*Font para los numeros*/
 .font-type-breaksteel { 
     font-family: breaksteel;
 }
 
+/*Permite centrar horizontal y verticalmente en el espacio*/
 .grid-div-display-flex-center {
     display: flex;
     justify-content: center;
     align-items: center;  
 }
 
+/*Sistema grid base*/
 .base-grid {
+    /*Indica que se usara el grid*/
     display: grid;
-    grid-template-columns: repeat(20, 1fr); /*1fr 1fr 1fr*/
+    /*Numero de columnas que tendra el grid y su tamano, 1 fr que indica todo el espacio disponible se divide en 20 partes por igual*/
+    grid-template-columns: repeat(20, 1fr);
+    /*Numero de filas que tendra el grid y su tamano, 1 fr que idnica el espacio disponible se dividira en 1 fila*/
     grid-template-rows: repeat(1, 1fr);
     
 }
@@ -35,9 +46,13 @@
     grid-column: 8/10;
 }
 
+/*Un grid dentro de otro grid*/
 .grid {
+    /*Indica que se usara el grid*/
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /*1fr 1fr 1fr*/
+    /*Numero de columnas que tendra el grid y su tamano, 1 fr que indica todo el espacio disponible se divide en 1 parte*/
+    grid-template-columns: repeat(1, 1fr); 
+    /*Numero de filas que tendra el grid y su tamano, 2 em que indica el espacio disponible sera de 2em por el numero 30*/
     grid-template-rows: repeat(30, 2em);
 }
 

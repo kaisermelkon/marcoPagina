@@ -1,7 +1,10 @@
+/*Da el fondo a la pagina*/
 .background-full-page {
+    /*Url de la imagen local del proyecto*/
     background: url('/assets/images/fondo central.png');
-    /* Set rules to fill background */
+    /*Indica si el fondo se repetira o es solo una vez*/
     background-repeat:no-repeat;
+    /*Indica el tamano del background, cover indica que cubre todo el contenido*/
     background-size:100%;
 }
 
@@ -15,13 +18,13 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /*1fr 1fr 1fr*/
-    grid-template-rows: repeat(1, 1fr); /*27.75*/
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(1, 1fr); 
 }
 
 .base-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /*1fr 1fr 1fr*/
+    grid-template-columns: repeat(1, 1fr); 
     grid-template-rows: repeat(22, 2em);
 }
 

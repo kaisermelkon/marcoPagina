@@ -1,7 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
-  <mat-toolbar class="background-color-black" style="height: 5.5em;">
+
+  <mat-toolbar class="background-color-black">
     <!--Titulo y/o logo de la aplicacion a la izquierda del navbar-->
-    <span><img style="width: 7.2em; height: 4.5em;" src="assets/images/isotipo blanco.png"></span>
+    <span><img class="width-7-2 height-4-5" src="assets/images/isotipo blanco.png"></span>
 
     <!-- This fills the remaining space of the current row -->
     <span class="example-fill-remaining-space"></span>
@@ -44,15 +44,18 @@
   </mat-toolbar>
   <router-outlet></router-outlet>
   <footer class="page-footer background-color-black">
-    <div class="grid-footer text-color-white" style="letter-spacing: 0.1em;">
+    <div class="grid-footer text-color-white letter-spacing-0-1">
       <div class="grid-div-display-flex-center grid-footer-column-2 grid-footer-row-2">
-        <h2><a class="text-color-white font-weight-400" style="text-decoration: none;" href="mailto:someone@example.com?Subject=Hello%20again">marcosmanuelrb@gmail.com</a></h2>
+        <i class="material-icons fa-2x margin-right-0-3">email</i>
+        <h2><a class="text-color-white font-weight-400 text-decoration-none" href="mailto:marcosmanuelrb@gmail.com?Subject=Hello%20again">marcosmanuelrb@gmail.com</a></h2>
       </div>
       <div class="grid-div-display-flex-center grid-footer-column-4 grid-footer-row-2">
-        <h2><a class="text-color-white font-weight-400" target="_blank" style="text-decoration: none;" href="https://www.instagram.com/marcosrodriguezsr">@marcosrodriguezsr</a></h2>
+        <i class="fab fa-instagram-square fa-2x margin-right-0-3"></i>
+        <h2><a class="text-color-white font-weight-400 text-decoration-none" target="_blank" href="https://www.instagram.com/marcosrodriguezsr">@marcosrodriguezsr</a></h2>
       </div>
       <div class="grid-div-display-flex-center grid-footer-column-6 grid-footer-row-2">
-        <h2><a class="text-color-white font-type-breaksteel font-weight-400" target="_blank" style="text-decoration: none;" href="https://api.whatsapp.com/send?phone=584126357860">+58 4126357860</a></h2>
+        <i class="fab fa-whatsapp-square fa-2x margin-right-0-3"></i>
+        <h4><a class="text-color-white font-type-breaksteel font-weight-400 text-decoration-none" target="_blank" href="https://api.whatsapp.com/send?phone=584126357860">+58 4126357860</a></h4>
       </div>
     </div>
   </footer>

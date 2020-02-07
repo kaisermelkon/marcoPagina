@@ -1,3 +1,4 @@
+//Data paraconectarse a firebase en produccion
 export const environment = {
   production: false,
   firebaseConfig: {
