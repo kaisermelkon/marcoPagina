@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminArticulosComponent implements OnInit {
 
+  public model;
+  public articles=[];
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  save(){
+    console.log("model",this.model)
+    this.articles.push(this.model);
+    this.model=""
+    console.log(this.articles)
+    
   }
 
 }

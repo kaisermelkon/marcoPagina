@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MatSliderModule } from '@angular/material/slider';
+
 
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
@@ -16,6 +18,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HomeComponent } from './home/home.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { CKEditorModule } from 'ckeditor4-angular';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -58,6 +61,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     FormsModule,
     MDBBootstrapModule.forRoot(),
+    MatSliderModule,
+    CKEditorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

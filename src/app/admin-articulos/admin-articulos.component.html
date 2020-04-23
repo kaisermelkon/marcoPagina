@@ -1,1 +1,14 @@
-<p>admin-articulos works!</p>
+<!-- <div class="md-form">
+    <textarea type="text" style="display: block;
+    margin-left: auto;
+    margin-right: auto; margin-top: 2em; margin-bottom: 2em;" id="form7" class="md-textarea md-textarea-auto form-control" rows="10" cols="100" mdbInput></textarea>
+</div> -->
+<ckeditor data="<p>Hello, world!</p>" [(ngModel)]="model"></ckeditor>
+<button style="display: block; margin-bottom: 2em; margin-top: 2em; margin-left: auto; margin-right: auto;"(click)="save()">Save</button>
+<div style="Font-family: “Arial”, Helvetica, sans-serif;" *ngFor="let article of articles, let i= index">
+    <h1 style="text-align:center; margin-bottom: 2em; margin-top: 2em; margin-left: auto; margin-right: auto;">Articulo {{i+1}}</h1>
+    <div style="margin-left: 2em; margin-right: 2em;" class="one" [innerHtml]="article"></div>
+    <!-- <ckeditor [config]="{ toolbar: ['null'] }" readOnly="true" [data]="article" config="extraPlugins: 'easyimage',
+    removePlugins: 'image', allowedContent: true, extraAllowedContent: img"></ckeditor> -->
+</div>
+
