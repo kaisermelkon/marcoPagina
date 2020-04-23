@@ -6,11 +6,11 @@ const path = require('path');
 const app = express();
 
 // Inicializa el app para usar heroku
-app.use(express.static(__dirname + '../dist/marcoPagina'));
+app.use(express.static(__dirname + '/dist/marcoPagina'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'../dist/marcoPagina/index.html'));
+res.sendFile(path.join(__dirname+'/dist/marcoPagina/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
